@@ -1,0 +1,147 @@
+/* Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0c223c, #7995e4);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    width: 500px;
+    text-align: center;
+    background: rgba(11, 25, 82, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 25px rgba(229, 116, 116, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Draw Section */
+.draw-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Canvas Containers */
+.canvas-container {
+    text-align: center;
+    margin: 0 15px;
+}
+
+/* Canvas Styling */
+canvas {
+    background: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+canvas:hover {
+    transform: scale(1.05);
+}
+
+/* Operator Select Box */
+select {
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 12px;
+    margin: 0 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+select:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #ff6b6b, #ffb400);
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ffb400, #ff6b6b);
+    transform: scale(1.05);
+    box-shadow: 0 5px 25px rgba(255, 0, 0, 0.6);
+}
+
+/* Result Box */
+.result-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.result-box:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Default Light Mode */
+body {
+    background: linear-gradient(135deg,rgb(21, 129, 144), #d28a8a);
+    color: #333;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: linear-gradient(135deg, #263238, #1c1c1c);
+    color: #fff;
+}
+
+/* Dark Mode Navbar */
+.dark-mode .navbar {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Dark Mode Button */
+#theme-toggle {
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dark-mode #theme-toggle {
+    color: yellow;
+}

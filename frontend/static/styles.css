@@ -1,0 +1,280 @@
+/* Global Styles */ 
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #3f7ae6, #2a5298);
+    color: white;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Scroll Effect */
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Navbar Links */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover, 
+.navbar ul li a.active {
+    color: #ffb400;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Adjust the margin-top for the containers */
+.container {
+    margin-top: 100px; /* Ensure this is enough space for the navbar */
+    padding: 20px;
+}
+/* Hero Section */
+.hero {
+    margin-top: 100px;
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    animation: gradientAnimation 5s infinite alternate;
+}
+
+/* Additional styling for predictable container behavior */
+.predict-container, .arithmetic-container {
+    padding-top: 120px; /* Ensure there's enough padding to avoid overlap */
+}
+
+@keyframes gradientAnimation {
+    0% { background: linear-gradient(135deg, #1e3c72, #2a5298); }
+    100% { background: linear-gradient(135deg, #0f0c29, #302b63); }
+}
+
+.highlight {
+    color: #ffb400;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px #d9534f;
+    transform: perspective(500px) translateZ(5px);
+}
+
+.btn:hover {
+    background: #ffb400;
+    box-shadow: 0 4px #cc8800;
+    transform: perspective(500px) translateZ(10px);
+}
+
+.btn-3d {
+    transform: perspective(500px) rotateX(10deg);
+    transition: transform 0.3s;
+}
+
+.btn-3d:hover {
+    transform: perspective(500px) rotateX(0deg);
+}
+
+/* Theme Toggle */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin-right: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Navigation Bar Standard Layout */
+.navbar .logo a {
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Additional Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 100px;
+    padding: 50px 20px;
+}
+
+.highlight {
+    color: #ffb400;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffb400;
+}
+
+/* 3D Button Effect */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px #d9534f;
+    transform: perspective(500px) translateZ(5px);
+}
+
+.btn:hover {
+    background: #ffb400;
+    box-shadow: 0 4px #cc8800;
+    transform: perspective(500px) translateZ(10px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px;
+    color: white;
+}
+
+.navbar .logo a {
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+.home-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.home-image img {
+    width: 100%;
+    max-height: 500px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 10px; /* Optional rounded corners */
+}

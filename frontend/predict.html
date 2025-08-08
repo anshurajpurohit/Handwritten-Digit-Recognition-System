@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Prediction</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/predict.css">
+    <link rel="stylesheet" href="static/dark-mode.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="predict.html" class="active">Digit Prediction</a></li>
+            <li><a href="arithmetic.html">Arithmetic Operations</a></li>
+        </ul>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <div class="container">
+        <h1>Handwritten Digit Recognition</h1>
+
+        <div class="upload-box">
+            <input type="file" id="imageUpload" accept="image/*">
+            <canvas id="canvas" width="200" height="200"></canvas>
+            <button id="clearCanvas">Clear</button>
+        </div>
+
+        <button id="predictBtn">Predict</button>
+
+        <div class="result-box">
+            <h2>Prediction:</h2>
+            <p id="predictionResult">Waiting for input...</p>
+        </div>
+    </div>
+
+    <script src="static/predict.js"></script>
+    <script src="static/navbar.js"></script>
+</body>
+</html>
