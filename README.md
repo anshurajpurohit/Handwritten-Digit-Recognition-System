@@ -38,6 +38,7 @@ Hosting on cloud platforms
 
 # to run frontend
 cd C:\Users\ANSHUMAAN\handwritten_digit_recognition\frontend
+
 python -m http.server 8080
 
 # to run backend
